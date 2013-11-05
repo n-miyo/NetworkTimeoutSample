@@ -184,9 +184,6 @@
     task = [session dataTaskWithURL:url completionHandler:handler];
   } else {
     task = [session dataTaskWithRequest:self.request completionHandler:handler];
-      [session
-        dataTaskWithURL:[NSURL URLWithString:self.urlTextField.text]
-        completionHandler:handler];
   }
 
   [task resume];
